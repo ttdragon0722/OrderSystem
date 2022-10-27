@@ -1,0 +1,109 @@
+
+header {
+    width: auto;
+    height: 10vh;
+}
+
+.content {
+    width: auto;
+    display: flex;
+}
+@media(max-width: 540px) {
+    .content {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.aside,
+.main {
+    height: 80vh;
+}
+@media(max-width:540px){
+    .aside {
+        height: auto;
+    }
+}
+
+.aside {
+    width: 400px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media(max-width:540px){
+    .main {
+        margin-top: 20px;
+    }
+}
+
+.json-data {
+    border-radius: 5px;
+}
+
+.json-data:hover,
+.dropdown-item:hover {
+    background-color: #D7D7E3;
+}
+
+.upload {
+    margin: 0 auto;
+}
+@media(max-width:540px){
+    .upload {
+        margin-left: 10px;
+    }
+}
+
+.model-body {
+    display: flex;
+}
+
+.choose-file-area {
+    display: flex;
+}
+
+.choose-output {
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.nowloading,
+.finish {
+    font-weight: bold;
+}
+
+/* table */
+.table-save {
+    z-index: 9999;
+    position: fixed;
+    right: 50px;
+    top: 50vh;
+}
+
+.table-title {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    width: 200px;
+}
